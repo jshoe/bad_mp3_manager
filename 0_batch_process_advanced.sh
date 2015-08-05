@@ -5,13 +5,13 @@ do
   if [ ${file: -4} != ".mp3" ] ; then
     continue  # Skip conditions.
   fi
-  echo -e "\nCURRENT FILE: $file"
-  read -p "Set song title: " title
+  echo -e "\nCURRENT FILE:    $file"
+  read -p "Set song title:  " title
   read -p "Set artist name: " artist
   read -p "Set album arist: " album_artist
-  read -p "Set album name: " album
-  read -p "Set song year: " year
-  read -p "Set song genre: " genre
+  read -p "Set album name:  " album
+  read -p "Set song year:   " year
+  read -p "Set song genre:  " genre
   read -p "Set the front offset (in seconds): " start_point
   read -p "Set the end point MINUS front offset (MM:SS format): " end_point
   out_file="$artist - $title.mp3"
